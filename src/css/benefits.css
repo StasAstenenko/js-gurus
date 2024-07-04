@@ -70,6 +70,12 @@
     margin-bottom: 64px;
 }
 
+.benefits-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (min-width: 768px) {
     .benefits-list {
         margin-bottom: 64px;
