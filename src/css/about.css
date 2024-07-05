@@ -1,3 +1,5 @@
+/* Section About */
+
 .container-about {
   display: flex;
   flex-direction: column;
@@ -29,17 +31,20 @@
   color: rgba(250, 250, 250, 0.4);
 }
 
-.accordion-container-card {
+/* Section About Accordion*/
+
+.ac-container-about-card {
   margin-bottom: 20px;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
-.ac-header-title {
+.ac-about-title {
   display: flex;
   justify-content: space-between;
   margin-bottom: 12px;
 }
 
-.ac-triger-btn-txt {
+.ac-triger-btn-about {
   background-color: transparent;
   font-weight: 600;
   font-size: 16px;
@@ -53,16 +58,16 @@
   padding: 0;
 }
 
-.ac-header-svg {
+.ac-about-svg {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100px;
   padding: 9px;
 }
 
-.ac-panel-text {
+.ac-panel-about {
   padding-bottom: 20px;
 }
-.container-about-information-text {
+.ac-about-inform-text {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -70,7 +75,7 @@
   color: #fafafa;
 }
 
-.container-about-information-text:not(:last-child) {
+.ac-about-inform-text:not(:last-child) {
   margin-bottom: 32px;
 }
 
@@ -86,6 +91,32 @@
     font-size: 38px;
     line-height: 1.05;
   }
+
+  .ac-container-about-card {
+    margin-bottom: 32px;
+  }
+
+  .ac-about-title {
+    margin-bottom: 8px;
+  }
+
+  .ac-triger-btn-about {
+    margin-bottom: 16px;
+  }
+
+  .ac-about-svg {
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .ac-panel-about {
+    padding-bottom: 32px;
+  }
+
+  .ac-about-inform-text:not(:last-child) {
+    margin-bottom: 16px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -99,5 +130,9 @@
   }
   .container-about-text {
     width: 680px;
+  }
+
+  .ac-about-inform-text:not(:last-child) {
+    margin-bottom: 32px;
   }
 }
