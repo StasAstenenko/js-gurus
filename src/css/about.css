@@ -33,6 +33,10 @@
 
 /* Section About Accordion*/
 
+.ac-container-about {
+  margin-bottom: 32px;
+}
+
 .ac-container-about-card {
   margin-bottom: 20px;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
@@ -79,6 +83,43 @@
   margin-bottom: 32px;
 }
 
+/* Section About Swiper */
+
+.about-swiper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55px;
+}
+
+.swiper-wrapper-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.description-about-swipper {
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+}
+
+.swiper-slide-about {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  width: 130px;
+  height: 130px;
+  /* background-color: #ed3b44; */
+}
+
+/* .swiper-about-svg {
+  color: #3b3b3b;
+} */
+
 @media only screen and (min-width: 768px) {
   .container-about {
     margin-bottom: 64px;
@@ -90,6 +131,10 @@
   .about-text {
     font-size: 38px;
     line-height: 1.05;
+  }
+
+  .ac-container-about {
+    margin-bottom: 64px;
   }
 
   .ac-container-about-card {
@@ -117,6 +162,19 @@
   .ac-about-inform-text:not(:last-child) {
     margin-bottom: 16px;
   }
+
+  .about-swiper {
+    gap: 64px;
+  }
+
+  .swiper-slide-about {
+    width: 200px;
+    height: 200px;
+  }
+
+  .description-about-swipper {
+    font-size: 20px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
@@ -132,7 +190,22 @@
     width: 680px;
   }
 
+  .ac-container-about {
+    margin-bottom: 96px;
+  }
+
+  .ac-panel-about {
+    max-width: 612px;
+    margin-left: auto;
+  }
+
   .ac-about-inform-text:not(:last-child) {
     margin-bottom: 32px;
+  }
+
+  .about-swiper {
+    gap: 72px;
+    padding-right: 32px;
+    padding-left: 32px;
   }
 }
