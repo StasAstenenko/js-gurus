@@ -44,7 +44,3 @@ const swiper = new Swiper('.about-swiper', {
   },
   direction: 'horizontal',
 });
-
-// swiper.activeIndex += 1;
-
-// const btnSw = document.querySelector('.js-sw-button');

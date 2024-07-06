@@ -39,7 +39,6 @@
 
 .ac.ac-container-about-card {
   margin-bottom: 20px;
-
   background-color: transparent;
   border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
@@ -65,9 +64,6 @@
   width: 36px !important;
   height: 36px !important;
   padding: 0 !important;
-}
-
-.ac-triger-btn-about {
   letter-spacing: -0.02em;
   text-transform: uppercase;
 }
@@ -162,22 +158,25 @@
     margin-bottom: 64px;
   }
 
-  .ac-container-about-card {
+  .ac .ac-container-about-card {
     margin-bottom: 32px;
   }
 
   .ac-about-title {
-    margin-bottom: 8px;
+    margin-bottom: 8px !important;
   }
 
-  .ac-triger-btn-about {
+  .ac-about-title-text {
     margin-bottom: 16px;
+  }
+
+  .ac .ac-triger-btn-about {
+    width: 40px !important;
+    height: 40px !important;
   }
 
   .ac-about-svg {
     padding: 10px;
-    width: 40px;
-    height: 40px;
   }
 
   .ac-panel-about {
