@@ -1,8 +1,15 @@
-// import Accordion from 'accordion-js';
+import Accordion from 'accordion-js';
+import 'accordion-js/dist/accordion.min.css';
 
-// const accordions = Array.from(document.querySelector('.js-ac-about'));
-
-// new Accordion('.js-ac-about', { showMultiple: true });
-
-// const list = document.querySelector('.js-ac-about');
-// console.log(list);
+const accordion = new Accordion('.ac-container-about', {
+  showMultiple: true,
+  onOpen: function (currentElement) {
+    currentElement.querySelector('.ac-about-svg').style.transform =
+      'rotate(180deg)';
+  },
+  onClose: function (currentElement) {
+    currentElement.querySelector('.ac-about-svg').style.transform =
+      'rotate(0deg)';
+  },
+});
+accordion.open(0);

@@ -37,8 +37,11 @@
   margin-bottom: 32px;
 }
 
-.ac-container-about-card {
+.ac.ac-container-about-card {
   margin-bottom: 20px;
+
+  background-color: transparent;
+  border: none;
   border-bottom: 1px solid rgba(250, 250, 250, 0.2);
 }
 
@@ -60,6 +63,10 @@
   margin-bottom: 12px;
   border: none;
   padding: 0;
+}
+
+.ac-triger-btn-about.ac-trigger::after {
+  content: '' !important;
 }
 
 .ac-about-svg {
