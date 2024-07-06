@@ -47,22 +47,29 @@
 
 .ac-about-title {
   display: flex;
-  justify-content: space-between;
-  margin-bottom: 12px;
+  margin-bottom: 12px !important;
 }
 
-.ac-triger-btn-about {
-  background-color: transparent;
+.ac-about-title-text {
+  margin-bottom: 12px;
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
-  text-decoration: none;
-  margin-bottom: 12px;
-  border: none;
-  padding: 0;
+}
+
+.ac .ac-triger-btn-about {
+  margin-left: auto !important;
+  width: 36px !important;
+  height: 36px !important;
+  padding: 0 !important;
+}
+
+.ac-triger-btn-about {
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
 }
 
 .ac-triger-btn-about.ac-trigger::after {
@@ -73,6 +80,11 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 100px;
   padding: 9px;
+  stroke: #fafafa;
+}
+
+.ac-panel {
+  padding-right: 0 !important;
 }
 
 .ac-panel-about {
@@ -122,16 +134,16 @@
   border: 1px solid rgba(250, 250, 250, 0.2);
   width: 130px !important;
   height: 130px;
-  /* background-color: #ed3b44; */
 }
 
 .swiper-slide-about.swiper-slide-active {
   background-color: #ed3b44;
 }
 
-/* .swiper-about-svg {
-  color: #3b3b3b;
-} */
+.swiper-about-svg {
+  fill: #3b3b3b;
+  stroke: #3b3b3b;
+}
 
 @media only screen and (min-width: 768px) {
   .container-about {
@@ -187,6 +199,11 @@
 
   .description-about-swipper {
     font-size: 20px;
+  }
+
+  .swiper-about-svg {
+    width: 40px;
+    height: 40px;
   }
 }
 
