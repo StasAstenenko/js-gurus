@@ -1,0 +1,128 @@
+/* show elements with animation */
+section {
+  opacity: 0;
+  transform: translateY(20px);
+}
+.in-view {
+  opacity: 1;
+  transition: translateY 1.5s, opacity 2s;
+  transform: translateY(0%);
+}
+/* /show elements with animation */
+.section-covers {
+  height: 508px;
+}
+
+.section-covers .container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%;
+  height: 100%;
+  background-image: radial-gradient(
+    rgba(255, 50, 50, 0.45),
+    rgba(217, 217, 217, 0.04)
+  );
+  background-size: cover; /* background-image: url('../img/covers/bg-m@1.webp'); */
+}
+
+.covers-ul {
+  position: absolute;
+  top: 40px;
+  left: -130px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 1200px;
+  transform: rotate(16deg);
+}
+
+.card-of-project {
+  width: 282px;
+  padding: 10px;
+}
+.card-of-project:nth-child(5),
+.card-of-project:nth-child(12) {
+  margin-left: 100px;
+}
+
+.in-view .card-of-project {
+  animation-name: running-linesLine;
+  animation-duration: 20s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+}
+@keyframes running-linesLine {
+  0% {
+    transform: translateX(-10%);
+  }
+  50% {
+    transform: translateX(-145%);
+  }
+  100% {
+    transform: translateX(-10%);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .section-covers {
+    height: 960px;
+  }
+  .covers-ul {
+    top: -30px;
+    left: -100px;
+    width: 2200px;
+  }
+  .card-of-project {
+    width: 544px;
+    padding: 20px;
+  }
+  .card-of-project:nth-child(5),
+  .card-of-project:nth-child(12) {
+    margin-left: 170px;
+  }
+
+  @keyframes running-linesLine {
+    0% {
+      transform: translateX(-30%);
+    }
+    50% {
+      transform: translateX(-80%);
+    }
+    100% {
+      transform: translateX(-30%);
+    }
+  }
+}
+@media only screen and (min-width: 1440px) {
+  .section-covers .container {
+    background-image: url('../img/covers/bg-pc@1.webp');
+    background-image: url('../img/covers/bg-pc@2.webp');
+  }
+  .nowebp .section-covers .container {
+    background-image: url('../img/covers/bg-pc@1.png');
+    background-image: url('../img/covers/bg-pc@2.png');
+  }
+
+  .covers-ul {
+    top: -110px;
+    width: 2800px;
+  }
+  .card-of-project:nth-child(5),
+  .card-of-project:nth-child(14) {
+    margin-left: 170px;
+  }
+  .card-of-project:nth-child(12) {
+    margin-left: 0;
+  }
+  @keyframes running-linesLine {
+    0% {
+      transform: translateX(-25%);
+    }
+    50% {
+      transform: translateX(-120%);
+    }
+    100% {
+      transform: translateX(-25%);
+    }
+  }
+}
