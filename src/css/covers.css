@@ -1,3 +1,19 @@
+/* tooltips */
+.tooltip {
+  text-decoration: none;
+  position: relative;
+}
+.tooltip span {
+  display: none;
+}
+.tooltip:hover span {
+  color: white;
+  display: block;
+  position: fixed;
+  overflow: hidden;
+}
+/* /tooltips */
+
 /* show elements with animation */
 section {
   opacity: 0;
@@ -9,6 +25,7 @@ section {
   transform: translateY(0%);
 }
 /* /show elements with animation */
+
 .section-covers {
   height: 508px;
 }
@@ -38,7 +55,8 @@ section {
 
 .card-of-project {
   width: 282px;
-  padding: 10px;
+  padding: 13px;
+  cursor: grab;
 }
 .card-of-project:nth-child(5),
 .card-of-project:nth-child(12) {
