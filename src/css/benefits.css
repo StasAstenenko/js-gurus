@@ -1,0 +1,112 @@
+.benefits-title{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: rgba(250, 250, 250, 0.4);
+    margin-bottom: 32px;
+}
+
+.benefits-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+.ben-list-title{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    margin-bottom: 6px;
+}
+
+.benefits-description{
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: rgba(250, 250, 250, 0.6);
+}
+
+.ben-desc-list{
+    max-width: 301px;
+}
+
+.benefits-item{
+    padding: 24px;
+    border-radius: 20px;
+    background: #242527;
+}
+
+.benefits-btn{
+    min-width: 187px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 18px 36px;
+    font-family: "Inter Tight", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    background-color: transparent;
+    transition: background-color 250ms linear;
+}
+
+.benefits-btn:focus,.benefits-btn:hover{
+    background-color:#e0373f;
+}
+
+.benefits-icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 10px;
+    background: #ed3b44;
+    margin-bottom: 64px;
+}
+
+.benefits-icon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+    .benefits-list {
+        margin-bottom: 64px;
+    }
+
+    .benefits-item {
+        width: calc((100% - 16px) / 2);
+    }
+}
+
+@media only screen and (min-width: 1440px) {
+    .benefits-item{
+        cursor: pointer;
+        transition: scale 250ms linear ;
+    }
+
+    .benefits-item:hover{
+        scale: 1.05;
+    }
+
+    .benefits-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .ben-list-bnt-cont{
+        width: 688px;
+    }
+
+    .benefits-title {
+        margin-bottom: 0;
+    }
+}
