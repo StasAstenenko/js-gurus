@@ -1,19 +1,32 @@
-<section class="header">
-  <div class="container">
-    <img
-      srcset="./img-header/image-1x.jpg 1x, ./img-header/image-2x.jpg 2x"
-      src="../img-header/image-1x.jpg "
-      width="80"
-      height="80"
-      class="costumers-img"
-      alt="guy"
-    />
-    <a href="">
-      <svg class="icon icon-open-video-icon">
-        <use xlink:href="#icon-open-video-icon"></use>
-      </svg>
-    </a>
-    <a href=""><p></p></a>
-    <button type="button"></button>
-  </div>
-</section>
+
+<div class="header">
+  <img
+    class="header-img"
+    srcset="./img/header-img/image-1x.jpg 1x, ./img/header-img/image-2x.jpg 2x"
+    src="./img/header-img/image-1x.jpg "
+    width="80"
+    height="80"
+    class="costumers-img"
+    alt="guy"
+  />
+
+  <!-- <svg class="" width="84" height="19">
+    <use href="../img/sprite/symbol-defs.svg#"></use>
+  </svg> -->
+  <svg class="icon icon-jefferson">
+    <use xlink:href="./img/sprite/symbol-defs.svg#icon-jefferson"></use>
+  </svg>
+  <a class="header-menu" href="">Menu</a>
+  <ul class="header-list is-hidden">
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+    <li><a href=""></a></li>
+  </ul>
+
+  <svg class="icon-burger icon-menu-burger" width="28" height="29">
+    <use xlink:href="../img/sprite/symbol-defs.svg#icon-menu-burger"></use>
+  </svg>
+  <a href="./footer.html" class="header-btn">Order the project</a>
+</div>
