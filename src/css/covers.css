@@ -1,16 +1,16 @@
 /* tooltips */
 .tooltip {
-  text-decoration: none;
   position: relative;
+  text-decoration: none;
 }
 .tooltip span {
   display: none;
 }
 .tooltip:hover span {
-  color: white;
-  display: block;
   position: fixed;
+  display: block;
   overflow: hidden;
+  color: white;
 }
 /* /tooltips */
 
@@ -33,14 +33,34 @@ section {
 .section-covers .container {
   position: relative;
   overflow: hidden;
-  max-width: 100%;
   height: 100%;
   background-image: radial-gradient(
     rgba(255, 50, 50, 0.45),
     rgba(217, 217, 217, 0.04)
   );
-  background-size: cover; /* background-image: url('../img/covers/bg-m@1.webp'); */
+  background-size: cover;
 }
+
+/* if bg-files
+that`s why gradient - better
+.section-covers .container {
+  background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-m@1.webp');
+  background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-m@2.webp');
+}
+  .nowebp .section-covers .container {
+    background-image: url('./img/covers/bg-m@1.png');
+    background-image: url('./img/covers/bg-m@2.png');
+  }
+  @media only screen and (min-width: 768px) {
+  .section-covers .container {
+    background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-t@1.webp');
+    background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-t@2.webp');
+  }
+  .nowebp .section-covers .container {
+    background-image: url('./img/covers/bg-t@1.png');
+    background-image: url('./img/covers/bg-t@2.png');
+  }
+} */
 
 .covers-ul {
   position: absolute;
@@ -113,12 +133,12 @@ section {
 }
 @media only screen and (min-width: 1440px) {
   .section-covers .container {
-    background-image: url('../img/covers/bg-pc@1.webp');
-    background-image: url('../img/covers/bg-pc@2.webp');
+    background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-pc@1.webp');
+    background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-pc@2.webp');
   }
   .nowebp .section-covers .container {
-    background-image: url('../img/covers/bg-pc@1.png');
-    background-image: url('../img/covers/bg-pc@2.png');
+    background-image: url('./img/covers/bg-pc@1.png');
+    background-image: url('./img/covers/bg-pc@2.png');
   }
 
   .covers-ul {
