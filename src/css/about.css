@@ -77,6 +77,12 @@
   border-radius: 100px;
   padding: 9px;
   stroke: #fafafa;
+  transition: stroke 250ms linear, border-color 250ms linear;
+}
+
+.ac-about-svg:hover {
+  stroke: #ed3b44;
+  border-color: #ed3b44;
 }
 
 .ac-panel {
@@ -137,7 +143,7 @@
 }
 
 .swiper-about-svg {
-  fill: #3b3b3b;
+  fill: none;
   stroke: #3b3b3b;
 }
 
