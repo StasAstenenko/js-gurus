@@ -9,6 +9,7 @@
 @import url('./projects.css');
 @import url('./reset.css');
 @import url('./reviews.css');
+@import url('modern-normalize/modern-normalize.css');
 
 @font-face {
     font-display: swap;

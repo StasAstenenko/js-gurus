@@ -7,4 +7,3 @@ import './js/modal.js';
 import './js/projects.js';
 import './js/benefits.js'
 import './js/about.js';
-import 'modern-normalize/modern-normalize.css';
