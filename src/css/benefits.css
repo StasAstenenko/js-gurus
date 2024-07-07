@@ -9,6 +9,10 @@
     margin-bottom: 32px;
 }
 
+.benefits-title::selection {
+    background-color: transparent;
+}
+
 .benefits-list{
     display: flex;
     flex-wrap: wrap;
@@ -90,7 +94,7 @@
 @media only screen and (min-width: 1440px) {
     .benefits-item{
         cursor: pointer;
-        transition: scale 250ms linear ;
+        transition: scale 250ms linear;
     }
 
     .benefits-item:hover{
