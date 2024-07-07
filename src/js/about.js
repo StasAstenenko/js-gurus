@@ -6,6 +6,7 @@ import { Navigation, Keyboard } from 'swiper/modules';
 
 const accordion = new Accordion('.ac-container-about', {
   showMultiple: true,
+  duration: 600,
   onOpen: function (currentElement) {
     currentElement.querySelector('.ac-about-svg').style.transform =
       'rotate(180deg)';
