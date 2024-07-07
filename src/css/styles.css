@@ -10,63 +10,82 @@
 @import url('./reset.css');
 @import url('./reviews.css');
 
+@font-face {
+    font-display: swap;
+        font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/inter-tight-v7-cyrillic_cyrillic-ext_latin-500.woff2') format('woff2');
+}
+
+ @font-face {
+    font-display: swap;
+        font-family: 'Inter Tight';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-tight-v7-cyrillic_cyrillic-ext_latin-600.woff2') format('woff2');
+ }
+ 
 .visually-hidden {
-    position: absolute;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 body {
-    background-color: #1c1d20;
+  background-color: #1c1d20;
 }
 
 section {
-    padding: 32px 0;
+  padding: 32px 0;
 }
 
 .container {
-    max-width: 375px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin: 0 auto;
+  max-width: 375px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
 }
 
-.section-title {}
+.section-title {
+}
 
-.standart-btn {}
+.standart-btn {
+}
 
 .standart-btn:hover,
-.standart-btn:focus {}
+.standart-btn:focus {
+}
 
 @media only screen and (min-width: 768px) {
-    .container {
-        max-width: 768px;
-        padding-right: 32px;
-        padding-left: 32px;
-    }
+  .container {
+    max-width: 768px;
+    padding-right: 32px;
+    padding-left: 32px;
+  }
 
-    section {
-        padding: 48px 0;
-    }
+  section {
+    padding: 48px 0;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
-    .container {
-        max-width: 1440px;
-    }
+  .container {
+    max-width: 1440px;
+  }
 
-    section {
-        padding: 82px 0;
-    }
+  section {
+    padding: 82px 0;
+  }
 }

@@ -1,0 +1,47 @@
+.header {
+  display: flex;
+  width: 343px;
+  position: fixed;
+  z-index: 999;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-jefferson {
+  width: 4.4208984375em;
+  margin-top: 32px;
+}
+.header-img {
+  border-radius: 18px;
+  width: 80px;
+  height: 80px;
+  margin: 32px 8px 16px;
+}
+.header-menu {
+  color: #fafafa;
+}
+.icon-burger {
+  display: block;
+  width: 28px;
+  height: 29px;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+}
+.icon-menu-burger {
+  margin: 32px 16px;
+}
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 1280px) {
+}
