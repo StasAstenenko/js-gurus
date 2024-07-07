@@ -24,6 +24,7 @@
     justify-content: center;
     align-items: center;
     border-radius: 0 0 24px 24px;
+
 }
 .list-prj {
     display: flex;
@@ -78,13 +79,17 @@
 .prj-btn:hover {
     background: #e0373f;
 }
-.btn-for-swiper {
+.btn-for-swiper-prev,
+.btn-for-swiper-next {
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
     padding: 14px;
     width: 52px;
     height: 52px;
     background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
 }
 .swiper-buttons {
@@ -96,7 +101,31 @@
 }
 .prj-svg {
     fill: #fafafa;
+    stroke: #fafafa;
+    
 }
+
+.projects-swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.prj-swiper-slide {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prj-swiper-slide img {
+    max-width: 100%;
+    height: auto;
+}
+
+.picture {
+    width: 100%;
+}
+
+
 @media only screen and (min-width: 768px) {
     .first-box-prj {
     padding: 64px 0 64px 64px;
@@ -137,10 +166,10 @@
     
     }
     .list-prj {
-        margin-bottom: 223px;
+        margin-bottom: 120px;
     }
     .main-prj-title {
-        margin-right: 153px;
+        margin-right: 133px;
         width: 494px;
     }
 }
