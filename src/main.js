@@ -5,4 +5,5 @@ import './js/footer.js';
 import './js/header.js';
 import './js/modal.js';
 import './js/projects.js';
-import './js/benefits.js';
+import './js/benefits.js'
+import './js/about.js';
