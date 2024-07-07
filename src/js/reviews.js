@@ -1,5 +1,4 @@
 import Swiper from 'swiper/bundle';
-import 'swiper/swiper-bundle.css';
 import '../css/reviews.css';
 import { fetchReviews } from './api.js';
 import iziToast from 'izitoast';
@@ -37,7 +36,7 @@ async function loadReviews() {
       swiperWrapperReviews.appendChild(slide);
     });
 
-    const swiper = new Swiper('.swiper-review', {
+    const swiperReview = new Swiper('.swiper-review', {
       slidesPerView: 1,
       spaceBetween: 20,
       loop: false,
@@ -65,9 +64,9 @@ async function loadReviews() {
       },
     });
 
-    swiper.on('slideChange', () => {
-      const isAtBeginning = swiper.isBeginning;
-      const isAtEnd = swiper.isEnd;
+    swiperReview.on('slideChange', () => {
+      const isAtBeginning = swiperReview.isBeginning;
+      const isAtEnd = swiperReview.isEnd;
 
       document.querySelector('.swiper-button-prev-reviews').disabled =
         isAtBeginning;
@@ -75,9 +74,9 @@ async function loadReviews() {
     });
 
     document.querySelector('.swiper-button-prev-reviews').disabled =
-      swiper.isBeginning;
-    document.querySelector('.swiper-button-next-reviews').disabled =
-      swiper.isEnd;
+      swiperReview.isBeginning;
+    document.querySelector('.swiperReview-button-next-reviews').disabled =
+      swiperReview.isEnd;
   } catch (error) {
     iziToast.error({
       title: 'Error',
