@@ -1,8 +1,9 @@
-.header {
+.header-container {
   display: flex;
-  width: 343px;
   position: fixed;
   z-index: 999;
+  width: 100%;
+  margin-top: 32px;
 }
 .is-hidden {
   opacity: 0;
@@ -19,16 +20,17 @@
 }
 .icon-jefferson {
   width: 4.4208984375em;
-  margin-top: 32px;
 }
 .header-img {
   border-radius: 18px;
   width: 80px;
   height: 80px;
-  margin: 32px 8px 16px;
+  margin-right: 8px;
+  margin-left: 16px;
 }
 .header-menu {
   color: #fafafa;
+  display: none;
 }
 .icon-burger {
   display: block;
@@ -37,11 +39,51 @@
   stroke-width: 0;
   stroke: currentColor;
   fill: currentColor;
+  /* color: #fafafa; */
 }
 .icon-menu-burger {
-  margin: 32px 16px;
+  margin: 32px 16px 0 120px;
+}
+.header-btn {
+  display: none;
 }
 @media screen and (min-width: 768px) {
+  .header-container {
+  }
+  .header-menu {
+    color: #fafafa;
+    display: block;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    padding: 10px;
+  }
+  .icon-burger {
+    display: none;
+  }
+  .header-btn {
+    display: block;
+
+    min-width: 163px; */
+    min-width: 163px;
+    border: 1px solid rgba(250, 250, 250, 0.2);
+    border-radius: 60px;
+    padding: 16px 24px;
+    font-family: 'Inter Tight', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+    color: #fafafa;
+    background-color: #ed3b44;
+    transition: background-color 250ms linear;
+    max-height: 55px;
+    margin-bottom: 25px;
+  }
+  .header-img {
+    margin-left: 32px;
+  }
 }
 @media screen and (min-width: 1280px) {
 }
