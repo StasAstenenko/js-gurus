@@ -1,6 +1,3 @@
-import 'basiclightbox/dist/basicLightbox.min.css';
-import * as basicLightbox from 'basiclightbox';
-
 const benMenu = document.querySelector('.benefits-list');
 let currentInstance = null;
 
