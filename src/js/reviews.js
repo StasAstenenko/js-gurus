@@ -5,7 +5,9 @@ import { fetchReviews } from './api.js';
 import iziToast from 'izitoast';
 
 async function loadReviews() {
-  const swiperWrapper = document.querySelector('.swiper-wrapper-reviews');
+  const swiperWrapperReviews = document.querySelector(
+    '.swiper-wrapper-reviews'
+  );
 
   try {
     const reviews = await fetchReviews();
@@ -18,7 +20,7 @@ async function loadReviews() {
       });
       return;
     }
-    swiperWrapper.innerHTML = '';
+    swiperWrapperReviews.innerHTML = '';
 
     reviews.forEach(review => {
       const slide = document.createElement('li');
@@ -32,7 +34,7 @@ async function loadReviews() {
           </div>
         </div>
       `;
-      swiperWrapper.appendChild(slide);
+      swiperWrapperReviews.appendChild(slide);
     });
 
     const swiper = new Swiper('.swiper-review', {
