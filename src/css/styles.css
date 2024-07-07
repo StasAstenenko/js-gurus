@@ -1,3 +1,4 @@
+@import url('modern-normalize/modern-normalize.css');
 @import url('./header.css');
 @import url('./about.css');
 @import url('./benefits.css');
@@ -9,7 +10,6 @@
 @import url('./projects.css');
 @import url('./reset.css');
 @import url('./reviews.css');
-@import url('modern-normalize/modern-normalize.css');
 
 @font-face {
     font-display: swap;
