@@ -1,6 +1,5 @@
 #reviews h2 {
   font-size: 24px;
-  font-weight: 500;
   padding-bottom: 32px;
   color: rgba(250, 250, 250, 0.4);
   text-align: left;
@@ -55,7 +54,6 @@
   color: #fafafa;
   margin-bottom: 8px;
 }
-
 .button-container-reviews {
   display: flex;
   justify-content: center;
@@ -68,7 +66,7 @@
 .swiper-button-prev-reviews,
 .swiper-button-next-reviews {
   border: 1px solid rgba(250, 250, 250, 0.5);
-  border-radius: 60px;
+  border-radius: 50px;
   background-color: transparent;
   display: flex;
   justify-content: center;
@@ -114,6 +112,7 @@
 
   .button-container-reviews {
     height: 52px;
+    width: 172px;
   }
 
   .swiper-button-prev-reviews,
@@ -128,7 +127,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1029px) {
   .swiper-review {
     width: calc((344px * 2) + (16px * 2));
   }
@@ -145,6 +144,8 @@
   .swiper-button-prev-reviews,
   .swiper-button-next-reviews {
     padding: 18px;
+    width: 68px;
+    height: 68px;
   }
 
   .icon-reviews,
@@ -154,13 +155,13 @@
   }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1030px) and (max-width: 1199px) {
   .swiper-review {
-    width: calc((332px + 20px) * 4);
+    width: calc((344px * 3) + (16px * 2));
   }
 
   .swiper-slide-reviews {
-    max-width: 332px;
+    max-width: 344px;
   }
 
   .button-container-reviews {
@@ -171,11 +172,16 @@
   .swiper-button-prev-reviews,
   .swiper-button-next-reviews {
     padding: 18px;
+    width: 68px;
+    height: 68px;
   }
+}
 
-  .icon-reviews,
-  .icon-reviews-one {
-    width: 32px;
-    height: 32px;
+@media (min-width: 1200px) {
+  .swiper-button-prev-reviews,
+  .swiper-button-next-reviews {
+    padding: 18px;
+    width: 68px;
+    height: 68px;
   }
 }
