@@ -68,22 +68,28 @@ async function loadReviews() {
       const isAtBeginning = swiperReview.isBeginning;
       const isAtEnd = swiperReview.isEnd;
 
-      document.querySelector('.swiper-button-prev-reviews').disabled =
-        isAtBeginning;
-      document.querySelector('.swiper-button-next-reviews').disabled = isAtEnd;
+      const prevButton = document.querySelector('.swiper-button-prev-reviews');
+      const nextButton = document.querySelector('.swiper-button-next-reviews');
+
+      if (prevButton && nextButton) {
+        prevButton.disabled = isAtBeginning;
+        nextButton.disabled = isAtEnd;
+      }
     });
 
-    document.querySelector('.swiper-button-prev-reviews').disabled =
-      swiperReview.isBeginning;
-    document.querySelector('.swiperReview-button-next-reviews').disabled =
-      swiperReview.isEnd;
+    const prevButton = document.querySelector('.swiper-button-prev-reviews');
+    const nextButton = document.querySelector('.swiper-button-next-reviews');
+
+    if (prevButton && nextButton) {
+      prevButton.disabled = swiperReview.isBeginning;
+      nextButton.disabled = swiperReview.isEnd;
+    }
   } catch (error) {
     iziToast.error({
       title: 'Error',
       message: 'Failed to fetch reviews: ' + error.message,
       position: 'topRight',
     });
-    console.error('Error fetching reviews:', error);
   }
 }
 
