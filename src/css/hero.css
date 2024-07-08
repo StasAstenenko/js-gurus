@@ -1,31 +1,17 @@
 /* Mobile */
 .hero {
   height: 100%;
-  background-image: linear-gradient(
-      90deg,
-      #1c1d20 49.68%,
-      #69292d 67.73%,
-      #ed3b44 100%
-    ),
+  background-image:
     url(../img/hero/mobile-hero.png);
-  transform: rotate(-180deg);
-  backdrop-filter: blur(100px);
+  background-size: cover;
+  backdrop-filter: blur(4px);
 }
 
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
   .hero {
-    background: linear-gradient(
-        90deg,
-        #1c1d20 49.68%,
-        #69292d 67.73%,
-        #ed3b44 100%
-      ),
+    background-image: 
       url(../img/hero/mobile-hero2x.png);
   }
-}
-
-.box {
-  transform: rotate(180deg);
 }
 
 .hero-title {
@@ -42,6 +28,7 @@
 
 .hero-list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-direction: row;
@@ -86,24 +73,14 @@
 @media screen and (min-width: 768px) {
   .hero {
     padding: 0;
-    background-image: linear-gradient(
-        90deg,
-        #1c1d20 49.68%,
-        #69292d 67.73%,
-        #ed3b44 100%
-      ),
+    background-image:
       url(../img/hero/tablet-hero.png);
   }
 }
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 768px) {
   .hero {
-    background: linear-gradient(
-        90deg,
-        #1c1d20 49.68%,
-        #69292d 67.73%,
-        #ed3b44 100%
-      ),
+    background-image:
       url(../img/hero/tablet-hero2x.png);
   }
 }
@@ -155,25 +132,16 @@
 /* Desktop */
 
 @media screen and (min-width: 1440px) {
-  .hero {
-    background-image: linear-gradient(
-        90deg,
-        #1c1d20 49.68%,
-        #69292d 67.73%,
-        #ed3b44 100%
-      ),
+  .hero{
+    background-image: 
       url(../img/hero/desktop-hero.png);
+    background-size: cover;
   }
 }
 
 @media only screen and (min-resolution: 192dpi) and (min-width: 1440px) {
   .hero {
-    background: linear-gradient(
-        90deg,
-        #1c1d20 49.68%,
-        #69292d 67.73%,
-        #ed3b44 100%
-      ),
+    background-image:
       url(../img/hero/desktop-hero2x.png);
   }
 }
