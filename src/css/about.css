@@ -124,6 +124,10 @@
   display: flex;
 }
 
+.about-swipper-btn {
+  cursor: pointer;
+}
+
 .description-about-swipper {
   font-weight: 500;
   font-size: 16px;
@@ -148,10 +152,6 @@
 .swiper-about-svg {
   fill: none;
   stroke: #3b3b3b;
-}
-
-.about-swipper-btn {
-  cursor: pointer;
 }
 
 @media only screen and (min-width: 768px) {
