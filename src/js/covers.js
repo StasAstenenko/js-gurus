@@ -1,7 +1,7 @@
 import simpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
-//
+// tooltips on hover
 var tooltips = document.querySelectorAll('.tooltip span');
 
 window.onmousemove = function (e) {
@@ -29,9 +29,12 @@ function onEntry(entry) {
 
 // rendering with options
 const retinaORnot = window.devicePixelRatio >= 2 ? 2 : 1;
-const webpORjpg = document.body.classList.contains('nowebp') ? 'jpg' : 'webp';
+const webpORjpg = document.body.classList.contains('nowebp') ? 'jpg' : 'webp'; // manualy switch to jpg:
+// let webpORjpg = 'jpg';
 window.addEventListener('resize', () => {
-  renderAccodingToWidth().then(simpleLightboxCoversSection.refresh());
+  renderAccodingToWidth()
+    .then(simpleLightboxCoversSection.refresh())
+    .catch(e => console.error(e));
 });
 
 const allProjects = [
@@ -67,13 +70,24 @@ const proudOfProjectsLarge = [
   { id: 11 },
 ];
 const proudOfProjectsStandart = proudOfProjectsLarge.slice(3, 17);
+let allCardsCode = '';
 
-function renderCoverCards(device, productsList, allProjects) {
-  document.querySelector('.covers-ul').innerHTML = productsList.reduce(
+function renderCoverCards(
+  allProjects,
+  productsList,
+  device,
+  retinaORnot,
+  webpORjpg
+) {
+  let path =
+    webpORjpg === 'jpg'
+      ? `./img/covers/project`
+      : `https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/project`;
+  allCardsCode = productsList.reduce(
     (acc, { id }) =>
-      (acc += `<li class="card-of-project"><a class="tooltip" href="./img/covers/project${id
+      (acc += `<li class="card-of-project"><a class="tooltip" href="${path}${id
         .toString()
-        .padStart(2, '0')}pc@2.${webpORjpg}"><img src="./img/covers/project${id
+        .padStart(2, '0')}pc@${retinaORnot}.${webpORjpg}"><img src="${path}${id
         .toString()
         .padStart(2, '0')}${device}@${retinaORnot}.${webpORjpg}" alt="${
         allProjects.find(element => element.id === id).name
@@ -82,14 +96,34 @@ function renderCoverCards(device, productsList, allProjects) {
       }</span></a></li>`),
     ''
   );
+
+  document.querySelector('.covers-ul').innerHTML = allCardsCode;
 }
 async function renderAccodingToWidth() {
   if (window.innerWidth < 768)
-    renderCoverCards('m', proudOfProjectsStandart, allProjects); // mobile
+    renderCoverCards(
+      allProjects,
+      proudOfProjectsStandart,
+      'm',
+      retinaORnot,
+      webpORjpg
+    ); // mobile
   if (window.innerWidth > 1439)
-    renderCoverCards('pc', proudOfProjectsLarge, allProjects); // pc
-  else if (window.innerWidth > 767)
-    renderCoverCards('t', proudOfProjectsStandart, allProjects); // tablet
+    renderCoverCards(
+      allProjects,
+      proudOfProjectsLarge,
+      'pc',
+      retinaORnot,
+      webpORjpg
+    );
+  else
+    renderCoverCards(
+      allProjects,
+      proudOfProjectsStandart,
+      't',
+      retinaORnot,
+      webpORjpg
+    );
 }
 renderAccodingToWidth();
 
