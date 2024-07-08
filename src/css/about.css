@@ -124,6 +124,10 @@
   display: flex;
 }
 
+.about-swipper-btn {
+  cursor: pointer;
+}
+
 .description-about-swipper {
   font-weight: 500;
   font-size: 16px;
@@ -143,10 +147,6 @@
 
 .swiper-slide-about.swiper-slide-active {
   background-color: #ed3b44;
-}
-
-.about-swipper-btn {
-  cursor: pointer;
 }
 
 .swiper-about-svg {
