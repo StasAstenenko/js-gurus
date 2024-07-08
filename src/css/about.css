@@ -150,6 +150,10 @@
   stroke: #3b3b3b;
 }
 
+.about-swipper-btn {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 768px) {
   .container-about {
     margin-bottom: 64px;
