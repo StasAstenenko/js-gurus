@@ -1,5 +1,8 @@
 /* Section About */
 
+.section-about {
+  padding-top: 64px;
+}
 .container-about {
   display: flex;
   flex-direction: column;
@@ -147,6 +150,10 @@
   stroke: #3b3b3b;
 }
 
+.about-swipper-btn {
+  cursor: pointer;
+}
+
 @media only screen and (min-width: 768px) {
   .container-about {
     margin-bottom: 64px;
@@ -214,7 +221,7 @@
 
 @media only screen and (min-width: 1440px) {
   .section-about {
-    padding-top: 14px;
+    padding-top: 96px;
   }
   .container-about {
     display: flex;
