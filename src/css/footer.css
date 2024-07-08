@@ -29,25 +29,25 @@
 @media only screen and (min-width: 768px) {
     .work-together {
         padding-block-end: 169px;
-        background-image: url('https: //raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-togeter/glass_effect_2_tablet_1x.webp');
+        background-image: url('https: //raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-together/glass_effect_2_tablet_1x.webp');
     }
 }
 
 @media only screen and (min-width: 768px) and (min-resolution: 2dppx) {
     .work-together {
-        background-image: url('https: //raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-togeter/glass_effect_2_tablet_2x.webp');
+        background-image: url('https: //raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-together/glass_effect_2_tablet_2x.webp');
     }
 }
 
 @media only screen and (min-width: 1440px) {
     .work-together {
-        background-image: url('https: //raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-togeter/glass_effect_2_desktop_1x.webp');
+        background-image: url('https: //raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-together/glass_effect_2_desktop_1x.webp');
     }
 }
 
 @media only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
     .work-together {
-        background-image: url('https: //raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-togeter/glass_effect_2_desktop_2x.webp');
+        background-image: url('https: //raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-together/glass_effect_2_desktop_2x.webp');
     }
 }
 
