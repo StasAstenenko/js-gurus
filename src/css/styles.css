@@ -1,3 +1,4 @@
+@import 'node_modules/modern-normalize/modern-normalize.css';
 @import url('./header.css');
 @import url('./about.css');
 @import url('./benefits.css');
@@ -45,6 +46,11 @@ html {
 
 body {
   background-color: #1c1d20;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
 }
 
 section {
