@@ -95,11 +95,11 @@
 @media only screen and (min-width: 1440px) {
     .benefits-item{
         cursor: pointer;
-        transition: scale 250ms linear;
+        transition: transform 250ms linear;
     }
 
     .benefits-item:hover{
-        scale: 1.05;
+       transform: scale(1.05);
     }
 
     .benefits-container{
