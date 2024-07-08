@@ -1,6 +1,6 @@
 
 import Swiper from 'swiper';
-import { Navigation, Keyboard, Mousewheel } from 'swiper/modules';
+import { Navigation, Keyboard } from 'swiper/modules';
 
 const btnPrev = document.querySelector(".btn-for-swiper-prev");
 const btnNext = document.querySelector(".btn-for-swiper-next");
@@ -41,10 +41,8 @@ const swiper = new Swiper('.projects-swiper', {
             enabled: true,
             onlyInViewport: false,
         },
-        mousewheel: {
-            invert: true,
-        },
-        modules: [Navigation, Keyboard, Mousewheel],
+
+        modules: [Navigation, Keyboard],
         navigation: {
             nextEl: '.btn-for-swiper-next',
             prevEl: '.btn-for-swiper-prev',
