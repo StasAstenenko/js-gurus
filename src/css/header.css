@@ -69,10 +69,7 @@ body {
 
   .header-menu {
     display: block;
-
     font-family: var(--font-family);
-    font-weight: 500;
-    font-size: 16px;
     letter-spacing: -0.02em;
     text-decoration: underline;
     text-decoration-skip-ink: none;
