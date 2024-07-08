@@ -17,9 +17,6 @@
 .swiper-wrapper-reviews {
   display: flex;
   transition: transform 0.9s ease;
-  list-style: none;
-  padding: 0;
-  margin: 0;
 }
 
 .swiper-slide-reviews {
@@ -41,11 +38,6 @@
 .review-text {
   height: 154px;
   overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: normal;
-  font-size: 1rem;
-  margin: 0;
-  line-height: 1.5;
   color: rgba(250, 250, 250, 0.4);
 }
 
@@ -57,7 +49,6 @@
 .button-container-reviews {
   display: flex;
   justify-content: center;
-  align-items: center;
   margin: 0 auto;
   gap: 12px;
   transition: border-color 0.3s ease;
@@ -82,6 +73,7 @@
 .swiper-button-prev-reviews:disabled,
 .swiper-button-next-reviews:disabled {
   border: 1px solid rgba(250, 250, 250, 0.2);
+  cursor: default;
 }
 
 .swiper-button-prev-reviews:disabled .icon-reviews,
@@ -110,11 +102,6 @@
     max-width: 344px;
   }
 
-  .button-container-reviews {
-    height: 52px;
-    width: 172px;
-  }
-
   .swiper-button-prev-reviews,
   .swiper-button-next-reviews {
     padding: 13px;
@@ -134,11 +121,6 @@
 
   .swiper-slide-reviews {
     max-width: 344px;
-  }
-
-  .button-container-reviews {
-    height: 68px;
-    width: 172px;
   }
 
   .swiper-button-prev-reviews,
@@ -162,11 +144,6 @@
 
   .swiper-slide-reviews {
     max-width: 344px;
-  }
-
-  .button-container-reviews {
-    height: 68px;
-    width: 172px;
   }
 
   .swiper-button-prev-reviews,
