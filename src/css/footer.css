@@ -4,8 +4,6 @@
     background-position: right;
     background-size: contain;
     background-blend-mode: overlay;
-    background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-together/glass_effect_2_mobile_1x.webp');
-
     font-family: 'Inter Tight', sans-serif;
     font-size: 16px;
     line-height: 1.5;
@@ -17,37 +15,6 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     -webkit-text-size-adjust: 100%;
-}
-
-@media (min-resolution: 2dppx) {
-    .work-together {
-        background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-together/glass_effect_2_mobile_2x.webp');
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .work-together {
-        padding-block-end: 169px;
-        background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-together/glass_effect_2_tablet_1x.webp');
-    }
-}
-
-@media only screen and (min-width: 768px) and (min-resolution: 2dppx) {
-    .work-together {
-        background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-together/glass_effect_2_tablet_2x.webp');
-    }
-}
-
-@media only screen and (min-width: 1440px) {
-    .work-together {
-        background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-together/glass_effect_2_desktop_1x.webp');
-    }
-}
-
-@media only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
-    .work-together {
-        background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/work-together/glass_effect_2_desktop_2x.webp');
-    }
 }
 
 .work-together .container {
@@ -367,20 +334,20 @@ select:-webkit-autofill::first-line {
 
 /* Mobile */
 .section-pb {
-    padding-bottom: 64px;
+    padding-bottom: 32px;
 }
 
 /* Tablet */
 @media only screen and (min-width: 768px) {
     .section-pb {
-        padding-bottom: 96px;
+        padding-bottom: 48px;
     }
 }
 
 /* Desktop*/
 @media only screen and (min-width: 1440px) {
     .section-pb {
-        padding-bottom: 164px;
+        padding-bottom: 82px;
     }
 }
 
