@@ -134,7 +134,7 @@ async function onSubmit(event) {
       email: userEmail,
       comment: userComments,
     });
-    openModalWithData(data);
+    // openModalWithData(data);
 
     resetData();
   } catch (error) {
