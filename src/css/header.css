@@ -1,8 +1,6 @@
 .header {
-  position: absolute;
-
+  position: fixed;
   top: 32px;
-  /* position: fixed; */
   left: 50%;
   z-index: 999;
   display: flex;
@@ -36,27 +34,26 @@ body {
   letter-spacing: -0.02em;
 }
 
-.header-list,
-.header-menu,
 .header-btn {
   display: none;
 }
 .header-list {
-  display: none;
   position: absolute;
   padding-top: 8px;
-  z-index: 1;
   opacity: 0;
   right: 50%;
   margin-top: 10px;
+  transform: translateY(-30px);
+  pointer-events: none;
   list-style-type: none;
-  /* transform: translateY(-50%); */
-  transform: translateY(100%);
-  transition: opacity 500ms ease-out, transform 500ms ease-out;
+  transition: opacity 1000ms ease-out, transform 1000ms ease-out;
 }
-.dropdown-menu {
-  display: block;
+.header-menu {
+  display: none;
+}
+.header-list.dropdown-menu {
   opacity: 1;
+  pointer-events: all;
   transform: translateY(0);
 }
 .icon-burger {
