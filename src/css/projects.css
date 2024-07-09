@@ -1,13 +1,4 @@
-.main-box-prj {
-    /* min-width: 343px; */
-    /* height: 100%; */
-    /* height: 812px; */
-}
-/* .box-prj {
-    display: flex;
-    flex-direction: column;
-    gap: 32px;
-} */
+
 .title-projects {
     font-size: 16px;
     line-height: 1.5;
@@ -22,9 +13,7 @@
     padding: 32px;
     border-radius: 24px 24px 0 0;
     width: 100%;
-    /* min-height: 406px; */
-    /* height: 406px; */
-
+   
 }
 .second-box-prj {
     background-color: #242527;
@@ -34,7 +23,7 @@
     align-items: center;
     border-radius: 0 0 24px 24px;
     width: 100%;
-    /* height: 406px; */
+   
 
 }
 .list-prj {
@@ -49,6 +38,7 @@
     padding: 13px 18px;
     border-radius: 60px;
     height: 100%;
+    font-weight: 500;
     font-size: 16px;
     letter-spacing: -0.02em;
     color: #1c1d20;
@@ -136,7 +126,7 @@
 }
 .projects-swiper {
     width: 100%;
-    /* height: 100%; */
+    
     overflow: hidden;
     margin-bottom: 32px;
 
@@ -156,12 +146,6 @@
 .picture {
     width: 100%;
 }
-@media only screen and (max-width: 374px) {
-.main-box-prj {
-/* min-width: 290px; */
-}
-}
-    
 
 
 
@@ -173,16 +157,15 @@
 @media only screen and (min-width: 768px) {
     .main-box-prj {
         min-width: 704px;
-        /* height: 100%; */
+        
     }
     .first-box-prj {
     padding: 64px 0 64px 64px;
-    /* max-height: 595px; */
-    /* height: 595px;  */
+   
     }
     .second-box-prj {
     padding: 120px 45px;
-    /* height: 595px; */
+    
     }
     .main-prj-title {
     font-size: 44px;
@@ -194,7 +177,6 @@
     margin-bottom: 164px;
     }
     .list-prj li {
-    /* height: 55px; */
     padding: 18px;
     }
     .prj-btn {
@@ -212,17 +194,16 @@
         display: flex;
         justify-content: space-between;
         min-width: 1376px;
-        /* height: 100%; */
+        
     }
     .first-box-prj {
         border-radius: 24px 0 0 24px;
-        /* min-height: 625px; */
-        /* height: 625px; */
+       
     }
     .second-box-prj {
         border-radius: 0 24px 24px 0;
         padding: 120px 38px;
-        /* height: 625px; */
+        
     
     }
     .list-prj {
