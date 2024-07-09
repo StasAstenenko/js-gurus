@@ -1,7 +1,6 @@
 const headerList = document.querySelector('.header-list');
 const headerMenu = document.querySelector('.header-menu');
 const headerContainer = document.querySelector('.header-menu-container');
-const headerLink = document.querySelector('.header-link');
 
 headerMenu.addEventListener('click', e => {
   e.preventDefault();
@@ -9,7 +8,7 @@ headerMenu.addEventListener('click', e => {
   headerList.classList.toggle('dropdown-menu');
 });
 
-headerLink.addEventListener('click', e => {
+headerList.addEventListener('click', e => {
   headerList.classList.remove('dropdown-menu');
 });
 
