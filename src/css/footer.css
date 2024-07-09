@@ -9,7 +9,7 @@
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: -0.02em;
-    color: #fafafa;    
+    color: #fafafa;
     font-synthesis: none;
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
@@ -87,7 +87,7 @@
 .input-wrapper {
     margin-block-end: 16px;
     position: relative;
-    width: 100%;    
+    width: 100%;
 }
 
 @media only screen and (min-width: 768px) {
@@ -255,6 +255,7 @@
     text-transform: uppercase;
     color: #fafafa;
 }
+
 /* ================================= */
 
 /* dynamic classes for js */
@@ -346,8 +347,9 @@ select:-webkit-autofill::first-line {
 
 /* Desktop*/
 @media only screen and (min-width: 1440px) {
-    .section-pb {
+    .container.section-pb {
         padding-bottom: 82px;
+        padding-left: 196px;
     }
 }
 
