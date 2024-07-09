@@ -3,6 +3,13 @@ import '../css/reviews.css';
 import { fetchReviews } from './api.js';
 import iziToast from 'izitoast';
 
+function shuffleArray(array) {
+  for (let i = array.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [array[i], array[j]] = [array[j], array[i]];
+  }
+}
+
 async function loadReviews() {
   const swiperWrapperReviews = document.querySelector(
     '.swiper-wrapper-reviews'
@@ -19,6 +26,8 @@ async function loadReviews() {
       });
       return;
     }
+    shuffleArray(reviews);
+
     swiperWrapperReviews.innerHTML = '';
 
     reviews.forEach(review => {

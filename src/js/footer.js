@@ -1,6 +1,8 @@
 import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
+import openModal1 from './modal';
+
 // userDataApi
 
 import axios from 'axios';
@@ -9,6 +11,8 @@ const sendUserDataApi = async ({ email, comment }) => {
   const URL = 'https://portfolio-js.b.goit.study/api/requests';
 
   const { data } = await axios.post(URL, { email, comment });
+  // throw e;
+
   return data;
 };
 
@@ -91,13 +95,6 @@ const resetAllValidation = () => {
 };
 
 
-
-
-
-
-
-
-
 const STORAGE_KEY = 'formData';
 
 const formData = getFromLocalStorage() || {
@@ -120,6 +117,10 @@ form.addEventListener('submit', onSubmit);
 
 async function onSubmit(event) {
   event.preventDefault();
+
+  // if (!validateEmail(event.target.userEmail)) {
+  //   return;
+  // }
   const { userEmail, userComments } = formData;
 
   const isValidEmail = validateEmail(userEmail);
@@ -134,13 +135,12 @@ async function onSubmit(event) {
       email: userEmail,
       comment: userComments,
     });
-    openModalWithData(data);
-
+    openModal1();
     resetData();
   } catch (error) {
     iziToast.error({
       title: 'Error',
-      message: error.message,
+      message: 'Something went wrong!',
       position: 'topRight',
     });
   }
