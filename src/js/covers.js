@@ -52,14 +52,12 @@ const allProjects = [
   { id: 11, name: 'MY Finances', alt: 'Manage Your Finances Masterfully' },
   { id: 12, name: 'L English', alt: 'Joing and learning Eanglish with us' },
 ];
-const proudOfProjectsLarge = [
-  { id: 11 },
-  { id: 12 },
-  { id: 9 },
+const proudOfProjects = [
   { id: 5 },
   { id: 10 },
   { id: 7 },
   { id: 6 },
+  { id: 12 },
   { id: 11 },
   { id: 1 },
   { id: 8 },
@@ -67,11 +65,7 @@ const proudOfProjectsLarge = [
   { id: 9 },
   { id: 4 },
   { id: 5 },
-  { id: 12 },
-  { id: 6 },
-  { id: 11 },
 ];
-const proudOfProjectsStandart = proudOfProjectsLarge.slice(3, 17);
 let allCardsCode = '';
 
 function renderCoverCards(
@@ -110,7 +104,7 @@ async function renderAccodingToWidth() {
     device = currentDevice;
     renderCoverCards(
       allProjects,
-      proudOfProjectsStandart,
+      proudOfProjects,
       currentDevice,
       retinaORnot,
       webpORjpg
