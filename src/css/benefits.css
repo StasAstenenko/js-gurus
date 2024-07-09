@@ -20,6 +20,10 @@
     margin-bottom: 32px;
 }
 
+.benefits-link{
+    padding: 18px 36px;
+}
+
 .ben-list-title{
     font-family: "Inter Tight", sans-serif;
     font-weight: 600;
@@ -50,11 +54,13 @@
 }
 
 .benefits-btn{
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     max-width: 189px;
+    min-height: 55px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    padding: 18px 36px;
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -62,6 +68,7 @@
     color: #fafafa;
     background-color: transparent;
     transition: background-color 250ms linear;
+    cursor: pointer;
 }
 
 .benefits-btn:focus,.benefits-btn:hover{
