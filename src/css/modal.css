@@ -203,6 +203,7 @@ text-align: center;
     text-align: center;
     background-size: cover;
     background-image: url(../img/modal/Glass_effect_1.png) ;
+    transition: opacity 250ms linear;    
 }
 @media only screen and (min-resolution: 192dpi) and (max-width: 767px) {
     .modal-heder{
