@@ -1,18 +1,17 @@
-.header-container{
+.header-container {
   display: flex;
   justify-content: space-between;
   padding-right: 16px;
   padding-left: 16px;
   padding-top: 32px;
 }
-body {
-  color: #fafafa;
-}
+
 .header-img {
   overflow: hidden;
   width: 80px;
   height: 80px;
   border-radius: 20px;
+  margin-right: 83px;
 }
 .header-logo {
   position: relative;
@@ -21,7 +20,7 @@ body {
   content: 'jefferson*';
   position: absolute;
   top: 0;
-  left: 100%;
+  left: 80px;
   height: 100%;
   padding-left: 8px;
   font-weight: 500;
@@ -29,21 +28,24 @@ body {
   letter-spacing: -0.02em;
 }
 
-.header-btn {
+.standart-btn.header-btn {
   display: none;
 }
-.header-nav > .header-list{
+.header-nav {
   position: absolute;
+  right: 50%;
+  transform: translateX(50%);
+}
+.header-nav > .header-list {
   padding-top: 8px;
   opacity: 0;
-  right: 50%;
   transform: translateY(-30px);
   pointer-events: none;
   list-style-type: none;
   transition: opacity 1000ms ease-out, transform 1000ms ease-out;
 }
 
-.header-list{
+.header-list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -95,26 +97,17 @@ body {
     text-decoration: underline;
     text-decoration-skip-ink: none;
   }
-
-  .header-btn {
+  .standart-btn.header-btn {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    min-width: 163px;
-    height: 55px;
-    border-radius: 60px;
-    background: #ed3b44;
-    font-weight: 500;
-    font-size: 16px;
-    letter-spacing: -0.02em;
   }
 }
+
 @media screen and (min-width: 1440px) {
   .header {
     width: 1440px;
   }
 
-  .header-link:hover{
+  .header-link:hover {
     text-decoration: underline;
   }
 }

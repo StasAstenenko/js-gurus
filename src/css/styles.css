@@ -12,21 +12,23 @@
 @import url('./reviews.css');
 
 @font-face {
-    font-display: swap;
-        font-family: 'Inter Tight';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/inter-tight-v7-cyrillic_cyrillic-ext_latin-500.woff2') format('woff2');
+  font-display: swap;
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-tight-v7-cyrillic_cyrillic-ext_latin-500.woff2')
+    format('woff2');
 }
 
- @font-face {
-    font-display: swap;
-        font-family: 'Inter Tight';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/inter-tight-v7-cyrillic_cyrillic-ext_latin-600.woff2') format('woff2');
- }
- 
+@font-face {
+  font-display: swap;
+  font-family: 'Inter Tight';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-tight-v7-cyrillic_cyrillic-ext_latin-600.woff2')
+    format('woff2');
+}
+
 .visually-hidden {
   position: absolute;
   overflow: hidden;
@@ -44,7 +46,7 @@ html {
   scroll-behavior: smooth;
 }
 
-.header{
+.header {
   position: fixed;
   width: 100%;
   height: 140px;
@@ -52,17 +54,17 @@ html {
   left: 50%;
   z-index: 999;
   transform: translateX(-50%);
-  background: linear-gradient(#262626b9,
-    #262626b9, #76030300);
+  background: linear-gradient(#262626b9, #262626b9, #76030300);
 }
 
 body {
+  font-family: 'Inter Tight', sans-serif;
   background-color: #1c1d20;
   color: #fafafa;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  letter-spacing: -0.02em;  
+  letter-spacing: -0.02em;
 }
 
 section {
@@ -76,14 +78,21 @@ section {
   margin: 0 auto;
 }
 
-.section-title {
-}
-
 .standart-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 163px;
+  height: 55px;
+  border-radius: 60px;
+  background: #ed3b44;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
 }
-
 .standart-btn:hover,
 .standart-btn:focus {
+  background-color: #e0373f;
 }
 
 @media only screen and (min-width: 768px) {
