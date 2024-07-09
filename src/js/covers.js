@@ -28,6 +28,8 @@ function onEntry(entry) {
 }
 
 // rendering with options
+let device,
+  currentDevice = 'm';
 const retinaORnot = window.devicePixelRatio >= 2 ? 2 : 1;
 const webpORjpg = document.body.classList.contains('nowebp') ? 'jpg' : 'webp'; // manualy switch to jpg:
 // let webpORjpg = 'jpg';
@@ -100,30 +102,20 @@ function renderCoverCards(
   document.querySelector('.covers-ul').innerHTML = allCardsCode;
 }
 async function renderAccodingToWidth() {
-  if (window.innerWidth < 768)
+  if (window.innerWidth < 768) currentDevice = 'm';
+  else if (window.innerWidth > 1439) currentDevice = 'pc';
+  else currentDevice = 't';
+
+  if (device !== currentDevice) {
+    device = currentDevice;
     renderCoverCards(
       allProjects,
       proudOfProjectsStandart,
-      'm',
-      retinaORnot,
-      webpORjpg
-    ); // mobile
-  if (window.innerWidth > 1439)
-    renderCoverCards(
-      allProjects,
-      proudOfProjectsLarge,
-      'pc',
+      currentDevice,
       retinaORnot,
       webpORjpg
     );
-  else
-    renderCoverCards(
-      allProjects,
-      proudOfProjectsStandart,
-      't',
-      retinaORnot,
-      webpORjpg
-    );
+  }
 }
 renderAccodingToWidth();
 
