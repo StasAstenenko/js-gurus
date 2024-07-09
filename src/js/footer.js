@@ -9,6 +9,8 @@ const sendUserDataApi = async ({ email, comment }) => {
   const URL = 'https://portfolio-js.b.goit.study/api/requests';
 
   const { data } = await axios.post(URL, { email, comment });
+  // throw e;
+
   return data;
 };
 
@@ -140,7 +142,7 @@ async function onSubmit(event) {
   } catch (error) {
     iziToast.error({
       title: 'Error',
-      message: error.message,
+      message: 'Something went wrong!',
       position: 'topRight',
     });
   }
