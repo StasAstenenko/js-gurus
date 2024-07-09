@@ -7,7 +7,7 @@
   display: none;
 }
 .tooltip:hover span {
-  position: fixed;
+  position: absolute;
   display: block;
   overflow: hidden;
   color: white;
@@ -34,38 +34,14 @@ section {
   position: relative;
   overflow: hidden;
   height: 100%;
-  background-image: radial-gradient(
-    rgba(255, 50, 50, 0.45),
-    rgba(217, 217, 217, 0.04)
-  );
-  background-size: cover;
+  background: radial-gradient(circle at 5% 5%, #ed3b4484, transparent 25%),
+    radial-gradient(circle at 80% 80%, #ed3b4484, transparent 25%);
 }
-
-/* if bg-files
-that`s why gradient - better
-.section-covers .container {
-  background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-m@1.webp');
-  background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-m@2.webp');
-}
-  .nowebp .section-covers .container {
-    background-image: url('./img/covers/bg-m@1.png');
-    background-image: url('./img/covers/bg-m@2.png');
-  }
-  @media only screen and (min-width: 768px) {
-  .section-covers .container {
-    background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-t@1.webp');
-    background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-t@2.webp');
-  }
-  .nowebp .section-covers .container {
-    background-image: url('./img/covers/bg-t@1.png');
-    background-image: url('./img/covers/bg-t@2.png');
-  }
-} */
 
 .covers-ul {
   position: absolute;
-  top: 40px;
-  left: -130px;
+  top: 80px;
+  left: 0;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -78,89 +54,114 @@ that`s why gradient - better
   padding: 13px;
   cursor: grab;
 }
-.card-of-project:nth-child(5),
-.card-of-project:nth-child(12) {
-  margin-left: 100px;
-}
-
 .in-view .card-of-project {
   animation-name: running-linesLine;
-  animation-duration: 20s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 45s;
+  animation-timing-function: ease-in;
   animation-iteration-count: infinite;
 }
 @keyframes running-linesLine {
   0% {
-    transform: translateX(-10%);
+    transform: translateX(-70px);
   }
   50% {
-    transform: translateX(-145%);
+    transform: translateX(-730px);
   }
   100% {
-    transform: translateX(-10%);
+    transform: translateX(-70px);
   }
 }
-
+@keyframes running-linesLine-back {
+  0% {
+    transform: translateX(-730px);
+  }
+  50% {
+    transform: translateX(-40px);
+  }
+  100% {
+    transform: translateX(-730px);
+  }
+}
+.card-of-project:nth-child(5),
+.card-of-project:nth-child(6),
+.card-of-project:nth-child(7),
+.card-of-project:nth-child(8) {
+  animation-name: running-linesLine-back;
+}
 @media only screen and (min-width: 768px) {
   .section-covers {
     height: 960px;
   }
   .covers-ul {
-    top: -30px;
-    left: -100px;
+    top: 100px;
     width: 2200px;
   }
   .card-of-project {
     width: 544px;
     padding: 20px;
   }
-  .card-of-project:nth-child(5),
-  .card-of-project:nth-child(12) {
-    margin-left: 170px;
-  }
 
   @keyframes running-linesLine {
     0% {
-      transform: translateX(-30%);
+      transform: translateX(-100px);
     }
     50% {
-      transform: translateX(-80%);
+      transform: translateX(-1370px);
     }
     100% {
-      transform: translateX(-30%);
+      transform: translateX(-100px);
+    }
+  }
+  @keyframes running-linesLine-back {
+    0% {
+      transform: translateX(-1350px);
+    }
+    50% {
+      transform: translateX(-70px);
+    }
+    100% {
+      transform: translateX(-1350px);
     }
   }
 }
 @media only screen and (min-width: 1440px) {
   .section-covers .container {
-    background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-pc@1.webp');
-    background-image: url('https://raw.githubusercontent.com/StasAstenenko/js-gurus/main/src/img/covers/bg-pc@2.webp');
-  }
-  .nowebp .section-covers .container {
-    background-image: url('./img/covers/bg-pc@1.png');
-    background-image: url('./img/covers/bg-pc@2.png');
+    background: radial-gradient(
+        circle at 14.53% 55.56%,
+        #ed3b4484,
+        transparent 15%
+      ),
+      radial-gradient(circle at 75.7% 12.65%, #ed3b4484, transparent 15%),
+      radial-gradient(circle at 30.86% 38.46%, #ed3b4484, transparent 15%),
+      radial-gradient(circle at 64.22% 98.97%, #ed3b4484, transparent 15%);
   }
 
+  .card-of-project {
+    padding: 30px 20px;
+  }
   .covers-ul {
-    top: -110px;
-    width: 2800px;
-  }
-  .card-of-project:nth-child(5),
-  .card-of-project:nth-child(14) {
-    margin-left: 170px;
-  }
-  .card-of-project:nth-child(12) {
-    margin-left: 0;
+    top: -50px;
   }
   @keyframes running-linesLine {
     0% {
-      transform: translateX(-25%);
+      transform: translateX(40px);
     }
     50% {
-      transform: translateX(-120%);
+      transform: translateX(-800px);
     }
     100% {
-      transform: translateX(-25%);
+      transform: translateX(40px);
+    }
+  }
+  @keyframes running-linesLine-back {
+    0% {
+      transform: translateX(-650px);
+    }
+    50% {
+      transform: translateX(-70px);
+    }
+    100% {
+      transform: translateX(-650px);
     }
   }
 }
