@@ -4,12 +4,13 @@ import { Navigation, Keyboard } from 'swiper/modules';
 
 const btnPrev = document.querySelector(".btn-for-swiper-prev");
 const btnNext = document.querySelector(".btn-for-swiper-next");
-const projectBtn = document.querySelector('.prj-btn');
-
-    projectBtn.addEventListener('click', function () {
-        const githubProjectUrl = 'https://stasastenenko.github.io/js-gurus/';
+const projectButtons = document.querySelectorAll('.prj-btn');
+projectButtons.forEach(btn => {
+    btn.addEventListener('click', function () {
+        const githubProjectUrl = 'https://github.com/StasAstenenko/js-gurus';
         window.open(githubProjectUrl, '_blank');
     });
+});
 
     function checkNavButtons(swiper) {
     if (swiper.isBeginning) {
