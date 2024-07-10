@@ -1,6 +1,6 @@
 
 import Swiper from 'swiper';
-import { Navigation, Keyboard } from 'swiper/modules';
+import { Keyboard } from 'swiper/modules';
 
 
 const btnPrev = document.querySelector(".btn-for-swiper-prev");
