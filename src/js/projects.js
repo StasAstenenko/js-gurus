@@ -45,11 +45,7 @@ const swiper = new Swiper('.projects-swiper', {
             onlyInViewport: false,
         },
 
-        modules: [Navigation, Keyboard],
-        navigation: {
-            nextEl: '.btn-for-swiper-next',
-            prevEl: '.btn-for-swiper-prev',
-        },
+        modules: [Keyboard],
     on: {
         init: function () {
             checkNavButtons(this);
@@ -59,6 +55,8 @@ const swiper = new Swiper('.projects-swiper', {
         }
         }
 });
+btnPrev.addEventListener('click', () => swiper.slidePrev());
+btnNext.addEventListener('click', () => swiper.slideNext());
 
 
     
