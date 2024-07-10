@@ -63,7 +63,8 @@
     line-height: 1.2;
     letter-spacing: -0.03em;
     color: #1c1d20;
-    max-width: 279px;
+    /* max-width: 279px; */
+    max-width: 100%;
     margin-bottom: 32px;
 }
 .prj-btn {
@@ -123,7 +124,7 @@
 .prj-svg {
     fill: none;
     stroke: #fafafa;
-    /* stroke-width: 2px; */
+    stroke-width: 2px;
     width: 24px;
     height: 24px;
     
@@ -158,7 +159,7 @@
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 767px) {
+@media only screen and (min-width: 374px) and (max-width: 767px) {
     .main-box-prj {
         margin-right: 2px;
     }

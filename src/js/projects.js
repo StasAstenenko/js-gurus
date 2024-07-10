@@ -2,6 +2,7 @@
 import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 
+
 const btnPrev = document.querySelector(".btn-for-swiper-prev");
 const btnNext = document.querySelector(".btn-for-swiper-next");
 const projectButtons = document.querySelectorAll('.prj-btn');
@@ -38,6 +39,7 @@ projectButtons.forEach(btn => {
 
 const swiper = new Swiper('.projects-swiper', {
     slidesPerView: 1,
+    slidesPerGroup: 1,
         keyboard: {
             enabled: true,
             onlyInViewport: false,
