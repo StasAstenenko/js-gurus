@@ -18,12 +18,10 @@
 }
 
 .about-text {
-  font-weight: 500;
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #fafafa;
 }
 
 .about-text-first {
@@ -55,9 +53,6 @@
 .ac-about-title-text {
   margin-bottom: 12px;
   font-weight: 600;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
   color: rgba(250, 250, 250, 0.4);
 }
@@ -67,7 +62,6 @@
   width: 36px !important;
   height: 36px !important;
   padding: 0 !important;
-  letter-spacing: -0.02em;
   text-transform: uppercase;
 }
 
@@ -95,13 +89,6 @@
 .ac-panel-about {
   padding-bottom: 20px;
 }
-.ac-about-inform-text {
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: -0.02em;
-  color: #fafafa;
-}
 
 .ac-about-inform-text:not(:last-child) {
   margin-bottom: 32px;
@@ -128,13 +115,6 @@
   cursor: pointer;
 }
 
-.description-about-swipper {
-  font-weight: 500;
-  font-size: 16px;
-  letter-spacing: -0.02em;
-  color: #fafafa;
-}
-
 .swiper-slide-about {
   display: flex;
   align-items: center;
@@ -152,6 +132,10 @@
 .swiper-about-svg {
   fill: none;
   stroke: #3b3b3b;
+}
+
+.swiper-about-svg:hover {
+  stroke: #fafafa;
 }
 
 @media only screen and (min-width: 768px) {
