@@ -4,23 +4,16 @@
     cursor: pointer;
 }
 
-
-.close-btn {
+.close-btn-futer{
     color: #FAFAFA;
     float: right;
     font-size: 28px;
     font-weight: bold;
     cursor: pointer;
- 
 
 }
 
-.close-btn:hover,
-.close-btn:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
-}
+
 
 
 /* --------------------modrl1------------------------ */
@@ -39,7 +32,6 @@
     font-size: 20px;
     font-weight: 600;
     line-height: 30px;
-    letter-spacing: -0.02em;
     text-align: center;
 margin-bottom: 16px;
    
@@ -62,6 +54,7 @@ text-align: center;
     height: 24px;
     text-align: center;
  margin-top: -44px;
+ margin-right: -12px;
  margin-bottom: 20px;
 
  float: right;
@@ -250,6 +243,13 @@ justify-content: center; */
     text-decoration: underline;
 }
 
+.header-modal-list{
+display: flex;
+flex-wrap: wrap;
+gap: 12px;
+justify-content: center
+}
+
 .header-modal-titles{
     color: #FAFAFA;
     font-family: Inter Tight;
@@ -274,33 +274,19 @@ line-height: 16.94px;
 letter-spacing: -0.02em;
 }
 
-/* 
-.modal-button-project{
-
-    width:164px;
-height: 45px;
-top: 703px;
-left: 106px;
-
-gap: 10px;
-border-radius: 60px;
-opacity: 0px;
-margin-top: 289px;
-} */
-
-
 
 .modal-benefits-btn{
    
-    display: block;
+    display: flex;
+    flex-wrap: nowrap;
     max-width: 189px;
     border: 1px solid rgba(250, 250, 250, 0.2);
     border-radius: 60px;
-    padding: 18px 36px;
+   
     font-family: "Inter Tight", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    letter-spacing: -0.02em;
+   
     color: #fafafa;
     background-color: transparent;
     transition: background-color 250ms linear;
@@ -311,4 +297,21 @@ margin-top: 289px;
 .modal-benefits-btn:focus,
 .modal-benefits-btn:hover{
     background-color:#e0373f;
+}
+/* -------------------------- кнопка закритя----------------- */
+.close-btn {
+    color: #FAFAFA;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+ 
+
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
 }
