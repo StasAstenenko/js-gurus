@@ -183,3 +183,8 @@ p.ac-text {
     padding-left: 32px;
   }
 }
+
+.white .faq-item.ac {
+  padding-left: 40px;
+  padding-right: 40px;
+}
