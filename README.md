@@ -1,7 +1,9 @@
 Portfolio - командний проект JavaScript модуля (FullStack курсу) від GoIT Макет
 https://www.figma.com/design/fww6BUe77KIm14vo9i8Agm/Portfolio?node-id=2-9&t=PUmYZ3S6feRW3p7f-0
 
-Команда розробників Astenenko Stanislav (тімлід)
+# Команда розробників
+
+Astenenko Stanislav (тімлід)
 
 Pokydko Anton (scram-майстер)
 
@@ -25,9 +27,9 @@ Neplokh Anya (work together (footer))
 
 Podolyan Yan (modal window)
 
-Команда JS-GURUS - КРЕАТИВ, НАДІЙНІСТЬ, ШВИДКІСТЬ \*
+# Команда JS-GURUS - КРЕАТИВ, НАДІЙНІСТЬ, ШВИДКІСТЬ
 
-Показники швидкості та html/css валідації
+# Показники швидкості та html/css валідації
 
 pagespeed.web.dev:
 
@@ -41,7 +43,12 @@ jigsaw.w3.org (CSS3 + SVG):
 
 https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fstasastenenko.github.io%2Fjs-gurus%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=uk
 
-Нотатка про деплой (якщо треба перейменувати репозиторій) --base=/<REPO>/ у
-файлі package.json має містити актуальну адресу репозиторія
+# Нотатка про деплой (якщо треба перейменувати репозиторій)
 
-"build": "vite build --base=/js-gurus/",
+--base=/<REPO>/ у файлі package.json має містити актуальну адресу репозиторія
+
+"build": "vite build --base=/js-gurus/"
+
+# HEADER
+
+Хочеш "ВАУ" ефект! Натисни на LOGO!!!
