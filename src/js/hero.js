@@ -6,6 +6,7 @@ const GLASS_SPAN = '<span class="glass-edge"></span>';
 let glassSpans = '';
 
 function renderGlassEffect() {
+  document.body.classList.add('colored');
   glassSpans = '';
   for (let x = window.innerWidth; x > 0; x -= span_width)
     glassSpans += GLASS_SPAN;
