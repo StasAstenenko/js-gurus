@@ -87,10 +87,11 @@ function switchColors(currentColorTheme, heroBG) {
   }
 }
 function whiteTheme() {
-  document.body.style.backgroundColor = '#fafafa';
-  document.body.style.color = '#1c1d20';
+  document.body.classList.add('white');
+  // document.body.style.color = '#1c1d20';
 }
 function blackTheme() {
-  document.body.style.backgroundColor = '#1c1d20';
-  document.body.style.color = '#fafafa';
+  document.body.classList.remove('white');
+  // document.body.style.backgroundColor = '#1c1d20';
+  // document.body.style.color = '#fafafa';
 }
