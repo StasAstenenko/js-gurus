@@ -1,4 +1,5 @@
-Portfolio - командний проект JavaScript модуля (FullStack курсу) від GoIT Макет
+# Portfolio - командний проект JavaScript модуля (FullStack курсу) від GoIT Макет
+
 https://www.figma.com/design/fww6BUe77KIm14vo9i8Agm/Portfolio?node-id=2-9&t=PUmYZ3S6feRW3p7f-0
 
 # Команда розробників
@@ -7,11 +8,11 @@ Astenenko Stanislav (тімлід)
 
 Pokydko Anton (scram-майстер)
 
-Sonina Victoria, Pokydko Anton (header)
+Sonina Victoria (header)
 
-Usik Oleg (hero)
+Usik Oleg, Pokydko Anton (hero)
 
-Hubar Myroslava (about me, презентація проекту)
+Hubar Myroslava (about me, презентація проєкту)
 
 Astenenko Stanislav (benefits)
 
@@ -19,15 +20,15 @@ Sydorchuk Olha (projects)
 
 Sikorskaya Ira (FAQ)
 
-Pokydko Anton (Covers)
+Pokydko Anton (covers)
 
 Sharapova Julia (reviews)
 
-Neplokh Anya (work together (footer))
+Neplokh Anya (work together, він же footer)
 
 Podolyan Yan (modal window)
 
-# Команда JS-GURUS - КРЕАТИВ, НАДІЙНІСТЬ, ШВИДКІСТЬ
+# Команда JS-GURUS - КРЕАТИВ, НАДІЙНІСТЬ, ШВИДКІСТЬ!
 
 # Показники швидкості та html/css валідації
 
