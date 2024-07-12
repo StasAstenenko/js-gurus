@@ -1,4 +1,5 @@
 import './js/api.js';
+import './js/hero.js';
 import './js/covers.js';
 import './js/faq.js';
 import './js/footer.js';
