@@ -34,7 +34,7 @@ Podolyan Yan (modal window)
 
 pagespeed.web.dev:
 
-https://pagespeed.web.dev/analysis/https-stasastenenko-github-io-js-gurus/eek62qt7iq?form_factor=mobile
+https://pagespeed.web.dev/analysis/https-stasastenenko-github-io-js-gurus/taz305rc6h?form_factor=mobile
 
 Nu Html Checker:
 
