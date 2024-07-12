@@ -123,9 +123,13 @@
   height: 44px;
   border-bottom: 1px solid #3b3b3b;
   text-overflow: ellipsis;
+  color: #fafafa;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -webkit-appearance: none;
   -webkit-border-radius: 0;
+}
+.white .input {
+  color: #212121;
 }
 
 .input:hover,
