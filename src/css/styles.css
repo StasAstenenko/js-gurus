@@ -89,10 +89,12 @@ section {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
+  color: #fafafa;
 }
 .standart-btn:hover,
 .standart-btn:focus {
   background-color: #e0373f;
+  color: #fafafa;
 }
 
 @media only screen and (min-width: 768px) {
